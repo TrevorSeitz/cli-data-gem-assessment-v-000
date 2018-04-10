@@ -70,7 +70,7 @@ class CommandLineInterface
       user_input = gets.chomp.downcase
       index = user_input.to_i - 1
       # binding.pry
-      puts wrap(Article.all[index].article_text)
+      puts wrap(Article.all[index].article_text.gsub("READ MORE", ""))
       # binding.pry
     # end
   end
