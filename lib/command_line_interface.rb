@@ -57,7 +57,7 @@ class CommandLineInterface
     # binding.pry
     user_input = ""
 
-    while while user_input != "exit"
+    while user_input != "exit"
       Article.all.each do |article|
         counter += 1
         # binding.pry
