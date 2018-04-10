@@ -75,7 +75,7 @@ class CommandLineInterface
       puts ""
       puts wrap(Article.all[index].article_text.gsub("by Roger Marsh", "by Roger Marsh \n").gsub("READ MORE", ""))
       puts ""
-      puts "type "exit" to return to main menu"
+      puts "type 'exit' to return to main menu"
       continue  = gets.chomp.downcase
       end
   end
