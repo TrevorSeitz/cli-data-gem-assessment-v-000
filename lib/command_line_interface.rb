@@ -9,7 +9,7 @@ class CommandLineInterface
     menu
   end
 
-  def wrap(s, width=78)
+  def wrap(s, width=125)
 	  s.gsub(/(.{1,#{width}})(\s+|\Z)/, "\\1\n")
 	end
 
