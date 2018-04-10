@@ -31,7 +31,7 @@ class Scraper
       binding.pry
       Article.new(@article_title, @article_info, @article_text, @article_url, @comments_url)
     end
-    binding.pry
+    # binding.pry
   end
 
 end
