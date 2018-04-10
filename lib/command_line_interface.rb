@@ -55,10 +55,15 @@ class CommandLineInterface
   def display_summary
     counter = 0
     # binding.pry
-    Article.all.each do |article|
-      counter += 1
-      # binding.pry
-      puts "#{counter}. #{article.article_title}  -  #{article.article_date}"
+    user_input = ""
+
+    while while user_input != "exit"
+      Article.all.each do |article|
+        counter += 1
+        # binding.pry
+        puts "#{counter}. #{article.article_title}  -  #{article.article_date}"
+      end
+      binding.pry
     end
   end
 
