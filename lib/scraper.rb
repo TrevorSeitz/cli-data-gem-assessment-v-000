@@ -27,9 +27,10 @@ class Scraper
       @article_text = article.css(".paragraph").text,
       @article_url = article.css(".blog-link @href").first.value, #find href for article
       @comments_url = article.css(".blog-comments a @href").first.value,
-      binding.pry
+      # binding.pry
       Article.new(@article_title, @article_info, @article_text, @article_url, @comments_url)
     end
+    binding.pry
   end
 
 end
