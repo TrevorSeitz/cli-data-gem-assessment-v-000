@@ -22,7 +22,7 @@ class Scraper
 
   def parse(nokogiri_file)
     nokogiri_file.css(".blog-post").each do |article|
-      # @article_title = article.css("h2 a").text,
+      @article_junk = article.css("h2 a").text,
       @article_info = article.css(".blog-date .date-text").first.children.text.gsub("\n\t\t", "").gsub("\n\t", ""),
       @article_title = article.css("h2 a").text,
       @article_text = article.css(".paragraph").text,
