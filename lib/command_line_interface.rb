@@ -62,22 +62,23 @@ class CommandLineInterface
     user_input = ""
 
     # while user_input != "exit"
-      Article.all.each do |article|
-        counter += 1
-        # binding.pry
-        puts "#{counter}. #{article.article_title}  -  #{article.article_date}"
-      end
-      user_input = gets.chomp.downcase
-      index = user_input.to_i - 1
+    Article.all.each do |article|
+      counter += 1
       # binding.pry
-      while continue != "exit"
+      puts "#{counter}. #{article.article_title}  -  #{article.article_date}"
+    end
+    user_input = gets.chomp.downcase
+    index = user_input.to_i - 1
+    # binding.pry
+    while continue != "exit"
       puts ""
       puts ""
       puts wrap(Article.all[index].article_text.gsub("by Roger Marsh", "by Roger Marsh \n").gsub("READ MORE", ""))
       puts ""
       puts "type 'exit' to return to main menu"
       continue  = gets.chomp.downcase
-      end
+    end
+    display_summary
   end
 
 end
