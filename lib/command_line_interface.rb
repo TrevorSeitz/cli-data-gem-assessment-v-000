@@ -9,6 +9,10 @@ class CommandLineInterface
     menu
   end
 
+  def wrap(s, width=78)
+	  s.gsub(/(.{1,#{width}})(\s+|\Z)/, "\\1\n")
+	end
+
   def menu
     user_input = ""
 
@@ -66,7 +70,7 @@ class CommandLineInterface
       user_input = gets.chomp.downcase
       index = user_input.to_i - 1
       binding.pry
-      puts Article.all[index].article_text
+      puts wrap(Article.all[index].article_text)
       # binding.pry
     end
   end
