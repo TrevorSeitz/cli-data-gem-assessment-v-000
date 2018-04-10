@@ -26,7 +26,7 @@ class Scraper
       @article_title = article.css("h2 a").text,
       @article_info = article.css(".blog-date .date-text").first.children.text.gsub("\n\t\t", "").gsub("\n\t", ""),
       @article_text = article.css(".paragraph").text,
-      binding.pry
+      # binding.pry
       @article_url = article.css(".blog-link @href").first.value, #find href for article
       @comments_url = article.css(".blog-comments a @href").first.value,
       # binding.pry
