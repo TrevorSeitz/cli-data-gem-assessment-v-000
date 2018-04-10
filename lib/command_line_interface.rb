@@ -64,7 +64,8 @@ class CommandLineInterface
         puts "#{counter}. #{article.article_title}  -  #{article.article_date}"
       end
       user_input = gets.chomp.downcase
-      Article.all[user_input-1].article_url
+      index = user_input.to_i - 1
+      Article.all[index].article_url
       binding.pry
     end
   end
