@@ -76,8 +76,8 @@ class CommandLineInterface
       puts wrap(Article.all[index].article_text.gsub("READ MORE", ""))
       puts ""
       puts "type exit to return to main menu"
-      # binding.pry
-    end
+      continue  = gets.chomp.downcase
+      end
   end
 
 end
