@@ -70,7 +70,12 @@ class CommandLineInterface
       user_input = gets.chomp.downcase
       index = user_input.to_i - 1
       # binding.pry
+      while continue != "exit"
+      puts ""
+      puts ""
       puts wrap(Article.all[index].article_text.gsub("READ MORE", ""))
+      puts ""
+      puts "type exit to return to main menu"
       # binding.pry
     # end
   end
