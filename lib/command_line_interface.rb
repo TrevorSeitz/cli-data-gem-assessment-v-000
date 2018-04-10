@@ -57,7 +57,7 @@ class CommandLineInterface
     # binding.pry
     Article.all.each do |article|
       counter += 1
-      binding.pry
+      # binding.pry
       puts "#{counter}. #{article.article_title}  -  #{article.article_date}"
     end
   end
