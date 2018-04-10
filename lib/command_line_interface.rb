@@ -66,7 +66,7 @@ class CommandLineInterface
       user_input = gets.chomp.downcase
       index = user_input.to_i - 1
       Article.all[index].article_url
-      binding.pry
+      # binding.pry
     end
   end
 
