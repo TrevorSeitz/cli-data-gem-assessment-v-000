@@ -7,7 +7,7 @@ class Article
   def initialize(article_title, article_info, article_text, article_url, comments_url)
 # binding.pry
     @article_title = article_title
-    @article_date = article_info[0]
+    @article_date = article_info
     @article_text = article_text
     @article_url = article_url
     @comments_url = comments_url
