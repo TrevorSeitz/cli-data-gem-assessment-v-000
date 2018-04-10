@@ -58,7 +58,7 @@ class CommandLineInterface
 
   def display_summary
     counter = 0
-    # binding.pry
+    continue = ""
     user_input = ""
 
     # while user_input != "exit"
