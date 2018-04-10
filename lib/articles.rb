@@ -13,7 +13,7 @@ class Article
     @comments_url = comments_url
     @@all << self
     # display_summary
-    binding.pry
+    # binding.pry
   end
 
   def self.all
