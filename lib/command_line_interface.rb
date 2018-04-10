@@ -77,7 +77,7 @@ class CommandLineInterface
       puts ""
       puts "type exit to return to main menu"
       # binding.pry
-    # end
+    end
   end
 
 end
