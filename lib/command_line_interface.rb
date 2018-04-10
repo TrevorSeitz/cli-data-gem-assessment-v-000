@@ -69,7 +69,7 @@ class CommandLineInterface
       end
       user_input = gets.chomp.downcase
       index = user_input.to_i - 1
-      binding.pry
+      # binding.pry
       puts wrap(Article.all[index].article_text)
       # binding.pry
     end
